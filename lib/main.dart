@@ -43,29 +43,31 @@ class _DicePageState extends State<DicePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: TextButton(
-            onPressed: () {
-              setState(() {
-                changeDiceNumber();
-              });
-            },
-            child: Image.asset("images/dice$leftDiceNumber.png"),
+    return Center(
+      child: Row(
+        children: [
+          Expanded(
+            child: TextButton(
+              onPressed: () {
+                setState(() {
+                  changeDiceNumber();
+                });
+              },
+              child: Image.asset("images/dice$leftDiceNumber.png"),
+            ),
           ),
-        ),
-        Expanded(
-          child: TextButton(
-            onPressed: () {
-              setState(() {
-                changeDiceNumber();
-              });
-            },
-            child: Image.asset("images/dice$rightDiceNumber.png"),
+          Expanded(
+            child: TextButton(
+              onPressed: () {
+                setState(() {
+                  changeDiceNumber();
+                });
+              },
+              child: Image.asset("images/dice$rightDiceNumber.png"),
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
