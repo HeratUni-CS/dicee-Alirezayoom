@@ -32,14 +32,18 @@ class DicePage extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
+          child: TextButton(
+            onPressed: () {
+              print("left");
+            },
             child: Image.asset("images/dice1.png"),
           ),
         ),
         Expanded(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
+          child: TextButton(
+            onPressed: () {
+              print('right');
+            },
             child: Image.asset("images/dice1.png"),
           ),
         ),
